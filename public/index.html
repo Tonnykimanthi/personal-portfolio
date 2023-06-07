@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-[url(images/body-bg.jpg)] bg-cover bg-slate-700 min-h-screen">
+    <header class="bg-white p-2">
+        <nav class="flex justify-between">
+            <h1
+                class="border border-black w-fit py-1 px-2.5 ml-3 text-lg font-medium text-white bg-black hover:bg-transparent hover:text-black cursor-pointer rounded-md transition-all duration-300">
+                Home</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor"
+                class="open-nav-btn w-6 h-6 mr-4 self-center hidden max-[500px]:block cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+
+            <ul class="flex items-center self-center gap-x-14 text-lg [&>li]:cursor-pointer max-[500px]:hidden">
+                <li class="group">
+                    About
+                    <div class="border-b-2 border-blue-500 w-0 group-hover:w-full transition-all duration-300"></div>
+                </li>
+                <li class="group">
+                    Work
+                    <div class="border-b-2 border-blue-500 w-0 group-hover:w-full transition-all duration-300"></div>
+                </li>
+                <li class="group">
+                    Contact
+                    <div class="border-b-2 border-blue-500 w-0 group-hover:w-full transition-all duration-300"></div>
+                </li>
+
+            </ul>
+            <button
+                class="bg-blue-500 text-white px-2.5 rounded hover:shadow-md hover:shadow-blue-200 transition-all max-[500px]:hidden">Email
+                me</button>
+        </nav>
+
+        <!-- Nav for small -->
+        <nav
+            class="nav-for-sm flex-col fixed top-0 right-0 bottom-0 left-0 bg-gradient-to-b from-slate-700 to-slate-500 hidden">
+            <div
+                class="close-nav-btn fixed top-5 right-5 p-2 hover:text-white cursor-pointer border border-amber-700/30 hover:bg-amber-700 rounded-full transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </div>
+            <ul
+                class="flex flex-col items-center self-center w-3/4 max-w-sm py-8 gap-y-8 mt-24 text-lg [&>li]:cursor-pointer bg-white rounded-md">
+                <li class="group">
+                    About
+                    <div class="border-b-2 border-blue-500 w-0 group-hover:w-full transition-all duration-300"></div>
+                </li>
+                <li class="group">
+                    Skils
+                    <div class="border-b-2 border-blue-500 w-0 group-hover:w-full transition-all duration-300"></div>
+                </li>
+                <li class="group">
+                    Contact
+                    <div class="border-b-2 border-blue-500 w-0 group-hover:w-full transition-all duration-300"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Intro -->
+    <main class="flex justify-around max-sm:flex-col max-sm:items-center gap-x-6 gap-y-5 px-6 mt-20">
+        <div class="max-sm:text-center">
+            <span class="text-5xl font-medium block">Hello!</span>
+            <span class="text-3xl font-medium mt-2 block">
+                I'm Tony
+                <span class="text-blue-600">Kimanthi</span>
+            </span>
+            <span class="text-2xl block tracking-wide">A Web developer based in Kenya.</span>
+            <div class="flex max-sm:justify-center max-sm:mx-auto gap-x-8 w-fit mt-4">
+                <a href="https://twitter.com/km_tonny" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="text-sky-500 hover:scale-110 transition-all cursor-pointer" width="24" height="24"
+                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M14.058 3.41c-1.807 .767 -2.995 2.453 -3.056 4.38l-.002 .182l-.243 -.023c-2.392 -.269 -4.498 -1.512 -5.944 -3.531a1 1 0 0 0 -1.685 .092l-.097 .186l-.049 .099c-.719 1.485 -1.19 3.29 -1.017 5.203l.03 .273c.283 2.263 1.5 4.215 3.779 5.679l.173 .107l-.081 .043c-1.315 .663 -2.518 .952 -3.827 .9c-1.056 -.04 -1.446 1.372 -.518 1.878c3.598 1.961 7.461 2.566 10.792 1.6c4.06 -1.18 7.152 -4.223 8.335 -8.433l.127 -.495c.238 -.993 .372 -2.006 .401 -3.024l.003 -.332l.393 -.779l.44 -.862l.214 -.434l.118 -.247c.265 -.565 .456 -1.033 .574 -1.43l.014 -.056l.008 -.018c.22 -.593 -.166 -1.358 -.941 -1.358l-.122 .007a.997 .997 0 0 0 -.231 .057l-.086 .038a7.46 7.46 0 0 1 -.88 .36l-.356 .115l-.271 .08l-.772 .214c-1.336 -1.118 -3.144 -1.254 -5.012 -.554l-.211 .084z"
+                            stroke-width="0" fill="currentColor"></path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/toney.k_/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="hover:scale-110 transition-all cursor-pointer"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        <path d="M16.5 7.5l0 .01"></path>
+                    </svg>
+                </a>
+                <a href="https://github.com/Tonykimanthi" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="hover:scale-110 transition-all" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="w-72 h-72 max-sm:w-60 max-sm:h-60 rounded-full overflow-hidden">
+            <img class="w-full h-full object-cover" src="images/profile.png" alt="My profile picture">
+        </div>
+    </main>
+
+
+    <section class="bg-black/50 py-8 mt-12">
+        <!-- About -->
+        <article class="flex flex-col">
+            <h1 class="text-2xl text-white self-center font-semibold tracking-wider">About Me</h1>
+            <div class="mt-5 flex justify-center max-sm:flex-col-reverse max-sm:items-center gap-x-8 gap-y-4">
+                <div
+                    class="self-end max-sm:self-center w-[40%] h-80 max-sm:h-60 max-sm:w-60 min-w-[10em] max-w-[20em] border-r-4 border-b-4 border-r-orange-400 border-b-orange-600 rounded-tl-md rounded-br-md overflow-hidden">
+                    <img class="object-cover w-full h-full" src="images/profile2.jpg" alt="My profile picture">
+                </div>
+                <div class="w-2/4 max-sm:w-[90%]">
+                    <p class="text-lg text-white">Hi, I'm Tony Kimanthi, a mid-level web developer with a passion for creating beautiful and
+                        functional websites. I have experience working with HTML, CSS, and JavaScript, and I'm always
+                        eager to learn and expand my skills. <br> <br>
+                        I have a solid foundation in front-end development, including Tailwind Css and I am dedicated to
+                        producing high-quality code that is clean, efficient, and well-documented. I'm excited to work
+                        with clients who are passionate about their projects and are looking for a dedicated and
+                        talented web developer to help bring their ideas to life. Let's work together to create
+                        something amazing!</p>
+                </div>
+            </div>
+        </article>
+
+
+
+
+    </section>
+
+
+
+
+
+</body>
+
+</html>
