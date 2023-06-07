@@ -731,6 +731,10 @@ video {
        column-gap: 2.5rem;
 }
 
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
 .self-end {
   align-self: flex-end;
 }
@@ -1020,6 +1024,11 @@ video {
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.text-orange-600 {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
 }
 
 .transition-all {
