@@ -10,12 +10,12 @@ window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
 
   if (prevScrollPos > currentScrollPos) {
-    mainNav.style.top = '0px'
+    mainNav.style.top = "0px";
   } else {
-    mainNav.style.top = '-60px'
+    mainNav.style.top = "-60px";
   }
   prevScrollPos = currentScrollPos;
-}
+};
 
 openNav.addEventListener("click", () => {
   navC.classList.add("flex", "min-[500px]:hidden");
@@ -36,14 +36,18 @@ navListForSmall.forEach((li) => {
 });
 
 // Doughnut chart
-const myChart = document.getElementById('my-chart');
+const myChart = document.getElementById("my-chart");
 
 const chart = new Chart(myChart, {
-  type: 'doughnut',
+  type: "doughnut",
   data: {
-    labels:['Web design', 'Photoshop', 'Premier pro'],
-    datasets:[{
-      data: [90, 70, 60]
-    }]
-  }
+    labels: ["Web design", "Photoshop", "Premier pro"],
+    datasets: [
+      {
+        data: [90, 60, 70],
+        borderWidth: 0,
+        cutout:70
+      },
+    ],
+  },
 });
