@@ -632,6 +632,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
@@ -782,6 +786,14 @@ video {
 
 .gap-y-8 {
   row-gap: 2rem;
+}
+
+.gap-y-1 {
+  row-gap: 0.25rem;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem;
 }
 
 .self-end {
