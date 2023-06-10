@@ -46,8 +46,9 @@ const chart = new Chart(myChart, {
       {
         data: [90, 60, 70],
         borderWidth: 0,
-        cutout:70
+        cutout: 70,
       },
     ],
   },
+  
 });
