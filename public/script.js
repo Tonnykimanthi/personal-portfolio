@@ -34,3 +34,16 @@ navListForSmall.forEach((li) => {
     navC.classList.add("hidden");
   }
 });
+
+// Doughnut chart
+const myChart = document.getElementById('my-chart');
+
+const chart = new Chart(myChart, {
+  type: 'doughnut',
+  data: {
+    labels:['Web design', 'Photoshop', 'Premier pro'],
+    datasets:[{
+      data: [90, 70, 60]
+    }]
+  }
+});
