@@ -10,11 +10,9 @@ window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
 
   if (prevScrollPos > currentScrollPos) {
-    mainNav.classList.toggle('top-0', true);
-    mainNav.classList.toggle('-top-14', false);
+    mainNav.style.top = '0px'
   } else {
-    mainNav.classList.toggle('top-0', false);
-    mainNav.classList.toggle('-top-14', true);
+    mainNav.style.top = '-60px'
   }
   prevScrollPos = currentScrollPos;
 }
