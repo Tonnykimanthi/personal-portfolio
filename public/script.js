@@ -3,10 +3,9 @@ const navListForSmall = document.querySelectorAll(".nav-li-for-sm");
 const openNav = document.querySelector(".open-nav-btn");
 const closeNav = document.querySelector(".close-nav-btn");
 
-const mainNav = document.getElementById("header-nav");
-
 let prevScrollPos = window.pageYOffset;
 window.onscroll = () => {
+  const mainNav = document.getElementById("header-nav");
   let currentScrollPos = window.pageYOffset;
 
   if (prevScrollPos > currentScrollPos) {
@@ -41,7 +40,7 @@ const myChart = document.getElementById("my-chart");
 const chart = new Chart(myChart, {
   type: "doughnut",
   data: {
-    labels: ["Web design", "Photoshop", "Premier pro"],
+    labels: ["Web Development", "UI/UX", "Responsive Design"],
     datasets: [
       {
         data: [90, 60, 70],
