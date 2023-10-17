@@ -1,7 +1,10 @@
+
 const navC = document.querySelector(".nav-for-sm");
 const navListForSmall = document.querySelectorAll(".nav-li-for-sm");
 const openNav = document.querySelector(".open-nav-btn");
 const closeNav = document.querySelector(".close-nav-btn");
+
+const projectWrapper = document.getElementById("project");
 
 let prevScrollPos = window.pageYOffset;
 window.onscroll = () => {
@@ -51,3 +54,4 @@ const chart = new Chart(myChart, {
   },
   
 });
+
